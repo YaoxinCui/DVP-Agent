@@ -1,4 +1,5 @@
 import type { FC } from 'react'
+import Dropdown from '@/app/components/Dropdown'
 import React from 'react'
 import {
   Bars3Icon,
@@ -18,7 +19,8 @@ const Header: FC<IHeaderProps> = ({
   onCreateNewChat,
 }) => {
   return (
-    <div className="shrink-0 flex items-center justify-between h-12 px-3 bg-gray-100">
+    <div className="shrink-0 flex items-center justify-between h-14 px-3 bg-gray-50 relative">
+      <Dropdown />
       {isMobile
         ? (
           <div

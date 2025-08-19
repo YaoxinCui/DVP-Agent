@@ -94,8 +94,7 @@ const Welcome: FC<IWelcomeProps> = ({
     return (
       <div className='space-y-3'>
         {promptConfig.prompt_variables.map(item => (
-          <div className='tablet:flex items-start mobile:space-y-2 tablet:space-y-0 mobile:text-xs tablet:text-sm' key={item.key}>
-            <label className={`flex-shrink-0 flex items-center tablet:leading-9 mobile:text-gray-700 tablet:text-gray-900 mobile:font-medium pc:font-normal ${s.formLabel}`}>{item.name}</label>
+          <div className='tablet:flex tablet:flex-col items-start mobile:space-y-2 tablet:space-y-0 mobile:text-xs tablet:text-sm' key={item.key}>
             {item.type === 'select'
               && (
                 <Select
@@ -168,6 +167,7 @@ const Welcome: FC<IWelcomeProps> = ({
                 />
               )
             }
+            <label className={`flex-shrink-0 flex items-center tablet:leading-9 mobile:text-gray-700 tablet:text-gray-300 mobile:font-medium pc:font-normal ${s.formLabel}`}>{item.name}</label>
           </div>
         ))}
       </div>
@@ -240,7 +240,7 @@ const Welcome: FC<IWelcomeProps> = ({
       >
         {renderInputs()}
         <ChatBtn
-          className='mt-3 mobile:ml-0 tablet:ml-[128px]'
+          className='mt-3 mobile:ml-0 tablet:ml-[-80px]'
           onClick={handleChat}
         />
       </TemplateVarPanel>

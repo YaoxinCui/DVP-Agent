@@ -1,0 +1,65 @@
+/* Dropdown 样式 */
+.dropdown-container {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dropdown-label {
+    /* font-size: 16px; */
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 10px;
+    font-size: 0.875rem;
+}
+
+.dropdown-label:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.custom-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(150, 149, 149, 0.3);
+    z-index: 1;
+    display: block;
+    width: 130%;
+}
+
+.custom-dropdown-item {
+    color: #333;
+    font-size: 13px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.custom-dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.custom-dropdown-item:hover {
+    background: rgba(241, 241, 241, 0.8);
+    border-radius: 8px;
+    width: 95%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.icon {
+    margin-right: 8px;
+}
